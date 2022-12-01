@@ -1,0 +1,17 @@
+{
+    "unique_together": ["name", "value"],
+    "cols": {
+        "name": {
+            "required": true,
+            "unique": true,
+            "type": "int",
+            "limit": 240
+        },
+        "value": {
+            "required": false,
+            "unique": false,
+            "type": "float",
+            "limit": 25
+        }
+    }
+}

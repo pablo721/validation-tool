@@ -1,0 +1,20 @@
+{
+    "unique_together": ["name", "value"],
+    "min_year": 2000,
+    "max_year": 2025,
+    "extensions": ["xlsx", "xls", "csv"],
+    "cols": {
+        "name": {
+            "required": true,
+            "unique": false,
+            "type": "int",
+            "limit": 240
+        },
+        "value": {
+            "required": true,
+            "unique": false,
+            "type": "date",
+            "limit": 1841078000.0
+        }
+    }
+}
