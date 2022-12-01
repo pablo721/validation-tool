@@ -1,4 +1,4 @@
 release: python setup_db.py;
-web: flask --app app run;
+web: gunicorn app:app
 
 
