@@ -1,4 +1,4 @@
-release: python manage.py makemigrations; python manage.py migrate;
-web: python manage.py runserver 0.0.0.0:$PORT
+release: python setup_db.py;
+web: flask --app app run 0.0.0.0:$PORT
 
 
