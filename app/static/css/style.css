@@ -1,0 +1,28 @@
+
+#new_process_form{width:30%; height:30%; align-items:vertical; position:absolute; top:0px}
+#new_process_header{position:absolute; top:5px}
+#new_process_attr_div{align-items:horizontal; padding: 10px 10px}
+#new_process_attr_header{width:60px; float:left}
+
+#new_process_head_div{padding: 10px 10px}
+
+#new_process_name{position:absolute; left:5px; top:60px}
+#new_process_file_name{position:absolute; left:5px; top:85px}
+#new_process_add_attr_btn{position:absolute; left:200px; top:60px}
+#create_process_button{position:absolute; top:60px; left:250px; width:66; height:28px; float:right}
+
+#new_process_attrs_table_div{position:absolute; top:100px; width:591px}
+#new_process_attrs_table{border: 1px solid black; width:100%}
+#new_process_attrs_table th{border: 1px solid black; padding:10px 10px}
+#new_process_attrs_table td{border: 1px solid black; padding:10px 10px}
+
+#index_process_list{margin: 5px}
+#index_process_list li{margin:15px 0px}
+
+#new_process_top_div{align-items:horizontal; padding:10px 10px}
+
+.cls-attr-div{float:bottom; position:relative; top:40px}
+.cls-attr-input{margin-left:10px}
+div{align-items:horizontal; margin-top:15px; padding:5px 5px; float:bottom}
+
+

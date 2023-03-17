@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% include '_upload_files.html' %}
+
+
+<form action="/process/validate/{{ proc_id }}" method="GET">
+  <input type="submit" value="Validate">
+</form>
+
+<p>
+    Process: {{ process.name }}
+</p>
+
+<p>
+    Excel file: {{ process.file_name }}
+</p>
+
+{% endblock %}

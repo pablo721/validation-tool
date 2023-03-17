@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div id="new_process_head_div">
+        <form id="new_process_form" action="/process/create" method="post">
+        <div id="new_process_top_div">
+            <h3 id="new_process_header">
+                New process
+            </h3>
+            <input type="text" id="new_process_name" name="new_process_name" placeholder="Process name...">
+            <input type="text" id="new_process_file_name" name="new_process_file_name" placeholder="File name...">
+            <button type="button" id="new_process_add_attr_btn" onclick="addAttribute()">
+                +
+            </button>
+            <button id="create_process_button">
+                Create
+            </button>
+        </div>
+    <div id="new_process_attrs_table_div">
+        <table id="new_process_attrs_table">
+            <thead>
+                <tr>
+                    <th id="new_process_attr_name_title">
+                        Attribute
+                    </th>
+                    <th id="new_process_attr_dtype_title">
+                        Data type
+                    </th>
+                    <th id="new_process_attr_max_size_title">
+                        Max size
+                    </th>
+                    <th id="new_process_attr_null_title">
+                        Required
+                    </th>
+                    <th id="new_process_attr_unique_title">
+                        Unique
+                    </th>
+                    <th id="new_process_attr_unique_together_title">
+                        Unique together
+                    </th>
+                    <th>
+                        Del
+                    </th>
+                </tr>
+            </thead>
+
+
+        </table>
+
+    </div>
+
+
+    </form>
+</div>
+{% endblock %}
+{% block js %}
+    <script src="/static/js/create_process.js"></script>
+
+{% endblock %}

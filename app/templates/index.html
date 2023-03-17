@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<div id="index_top_div">
+    <h2> Processes </h2>
+    <button type="button" onclick="location.href='/process/new'">
+          New process
+    </button>
+    <input type="text" id="index_text_input" oninput="filterProcesses();">
+
+</div>
+<div id="index_process_list_div">
+    <ul id="index_process_list">
+        {% for process in processes %}
+        <li>
+            <a href="/process/{{ process.id }}"> {{ process.name }} </a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
+
+
+{% endblock %}
+
+{% block js %}
+    <script type="text/javascript" src="/static/js/process_list.js">
+    </script>
+
+{% endblock %}
